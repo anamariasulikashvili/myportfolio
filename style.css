@@ -1,0 +1,374 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color: #020207;
+    margin: auto;
+}
+@font-face{
+    font-family:'Regular';
+    src: url(fonts/Regular.ttf);
+}
+@font-face{
+    font-family: 'LobsterTwo-Regular';
+    src: url(fonts/LobsterTwo-Regular.otf);
+}
+header{
+    width: 100%;
+    height: 100px;
+    background-color: #020207;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 70px;
+    position: fixed;
+}
+.logo img{
+    width: 10em;
+    padding: 15px;
+    cursor: pointer;
+}
+.hamburger{
+    display: none;
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+font-family: "Regular";
+display: block;
+color: #aba6ea ;
+font-size: 1.7em;
+padding: 10px 25px;
+border-radius: 50px;
+transition: 0.2s;
+margin: 0 5px;
+}
+.nav-bar ul li a:hover{
+    box-shadow: 1px 2px 10px #65609f ;
+border-radius: 10px;
+}
+
+.main-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 200px;
+}
+.me{
+    width: 30em;
+    border-radius: 30%;
+}
+.main-container p{
+color:#aba6ea ;
+font-size: 4em;
+text-align: center;
+font-family:'LobsterTwo-Regular';
+border-right: 1px solid #aba6ea;
+padding: 20px;
+}
+.main-text{
+    display: flex;
+}
+.main-container p:nth-child(even){
+ border: none;
+}
+.texts{
+    display: flex;
+    justify-content: center;
+    margin: 15px;
+    padding: 20px;
+}
+.texts h1{
+    color: #aba6ea;
+    font-family: 'Regular';
+    font-size: 2.8em;
+    border-bottom: 1px dashed #aba6ea;
+}
+.skill-info{
+    width: 600px;
+    border: 1px solid #aba6ea;
+    border-radius: 1em;
+   
+}
+.skill-info p{
+    color: #aba6ea;
+    font-family: 'Regular';
+    margin: 10px;
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.4em;
+}
+.perc{
+    width: 80%;
+    background-color: rgb(187, 187, 187);
+    display: flex;
+    text-align: right;
+    border-radius: 40px;
+    margin: 20px;
+}
+
+.skillset-first{
+    background-color: rgb(0, 143, 10);
+    width: 90%;
+    border-radius: 30px;
+}
+.skillset-second{
+    background-color: rgb(0, 143, 10);
+    width: 90%;
+    border-radius: 30px;
+}
+.skillset-third{
+    background-color: rgb(0, 143, 10);
+    width: 70%;
+    border-radius: 30px;
+}
+.about-info{    
+    width: 600px;
+  border: 1px  solid #aba6ea;
+  border-radius: 1em;
+  margin: 20px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.info-cont{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0a1d;
+    padding: 50px;
+}
+.about-info p span{
+  color:#aba6ea;
+  font-family: 'Regular';
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: 5px;
+}
+.about-info p{
+    color:#aba6ea;
+    font-family: 'Regular';
+    font-size: 1.4em;
+}
+.services{
+  margin: 10px;
+  padding: 110px;
+  font-family: 'Regular';
+  display: flex;
+  justify-content: space-around;
+}
+.services p{
+    color: #aba6ea;
+    font-family: 'Regular';
+    font-size: 30px;
+    padding: 20px;
+}
+.card-1 img{
+    width: 25em;
+    border-radius: 30px;
+}
+
+.card-2 img{
+    width: 25em;
+    border-radius: 30px;
+}
+.card-1{
+    width: 400px;
+    border-radius: 30px;
+    height: 500px;
+    box-shadow: 10px 20px 30px #201c55;
+}
+.card-2{
+    width: 400px;
+    border-radius: 30px;
+    box-shadow: 10px 20px 30px #201c55;
+    height: 500px;
+}
+.card-1 a{
+    color: #aba6ea;
+    padding: 20px;
+}
+.card-2 a{
+    color: #aba6ea;
+    padding: 20px;
+}
+.card-1:hover{
+    box-shadow: 10px 20px 30px #403982;
+    color: #6b65b8;
+}
+.card-2:hover{
+    box-shadow: 10px 20px 30px #403982;
+    color: #6b65b8;
+}
+.footer-cont{
+    background-color: #0a0a1d;
+    width: 100%;
+    padding: 50px;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #59559c;
+}
+.icons img{
+    width: 2.3em;
+    margin: 10px;
+}
+.footer-cont p{
+    color: #aba6ea;
+    font-family: 'Regular';
+    font-size: 1.4em;
+}
+@media screen and (max-width:1150px){
+    .hamburger{
+        display: block;
+        cursor: pointer;
+    }
+    .nav-bar{
+        height: 0px;
+        position: absolute;
+        top: 135px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background: #020207;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+    .nav-bar.active{
+        height: 450px;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+    .nav-bar ul li a{
+        margin-bottom: 30px;
+    }
+    .services{
+        flex-direction: column;
+        align-items: center;
+        gap: 50px;
+    }
+    .div{
+        flex-direction: column;
+    }
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding: 100px;
+    }
+    .me{
+        width: 25em;
+    }
+    .main-container p{
+        font-size: 3em;
+        padding: 50px;
+        }
+    .icons img{
+        width: 1.8em;
+    }
+    .footer-cont p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:650px){
+    .logo img{
+        width: 6em;
+        padding: 5px;
+    }
+    .hamburger img{
+        width: 2em;
+    }
+    .me{
+        width: 16em;
+    }
+    .main-container p{
+        font-size:2.3em ;
+    }
+    .texts h1{
+        font-size: 2em;
+    }
+    .about-info{
+        width: 400px;
+    }
+    .about-info p{
+        font-size: 1em;
+    }
+    .skill-info{
+        width: 400px;
+    }
+    .skill-info p{
+        font-size: 1em;
+    }
+    .card-1{
+        width: 250px;
+        height: 350px;
+    }
+    .card-1 img{
+        width: 250px;
+    }
+    .card-2{
+        width: 250px;
+        height: 350px;
+    }
+    .card-2 img{
+        width: 250px;
+    }
+    .services p{
+        font-size: 20px;
+    }
+    .card-1 a, .card-2 a{
+        font-size: 13px ;
+    }
+    .icons img{
+        width: 1.5em;
+    }
+    .footer-cont p{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width:460px){
+    .logo img{
+        width: 5em;
+    }
+    .hamburger img{
+        width: 1.6em;
+    }
+    .main-container p{
+        font-size:1.6em ;
+    }
+    .texts h1{
+        font-size: 1.5em;
+    }
+    .about-info{
+        width: 300px;
+    }
+    .about-info p{
+        font-size: 0.9em;
+    }
+    .skill-info{
+        width: 300px;
+    }
+    .skill-info p{
+        font-size: 0.9em;
+    }
+}

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="photos/icon.PNG">
+</head>
+<body>
+    <header>
+        <div class="logo"><a href="#home"><img src="photos/icon.PNG" alt=""></a></div>
+        <div class="hamburger"><img src="photos/icons8-menu-rounded-48.png" alt=""></div>
+        <div class="nav-bar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-info">About</a></li>
+                <li><a href="#services">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+    
+    <main>
+        <div class="main-container" id="home"><!--subheading-->
+            <div class="main-text">
+                <p>Hi, <br>I'm Anamaria</p>
+                <p>Welcome <br>To My Portfolio</p>
+            </div>
+            <img src="photos/me.jpg" alt="" class="me"><!--my image-->
+        </div>
+       
+
+        <div class="info-cont" id="about-info"><!--container about me-->
+            <div class="texts">
+                <h1>About me</h1><!--subhead-->
+            </div>
+        <div class="about-info">
+        <p>
+            <span class="title">Name:</span>
+            Anamaria Sulikashvili
+        </p>
+        <p>
+            <span class="title">Profile</span>
+            Front-end Developer
+        </p>
+        <p>
+            <span class="title">Education:</span>
+           IT Step Academy
+        </p>
+        <p>
+            <span class="title">Email:</span>
+           sulikashviliannemarie@gmail.com
+        </p>
+        <p>
+            <span class="title">Phone:</span>
+            (+995)  571 233 535
+        </p>
+        </div>
+
+        <div class="texts">
+            <h1>Skills</h1><!--subhead-->
+        </div>
+        <div class="skill-info"><!--percentage about my knowledge-->
+           <p>HTML</p>
+           <div class="perc">
+            <div class="skillset-first">90%</div>
+        </div>
+        <p>CSS</p>
+        <div class="perc">
+         <div class="skillset-second">90%</div>
+     </div>
+     <p>JavaScript</p>
+        <div class="perc">
+         <div class="skillset-third">70%</div>
+     </div>
+        </div>
+    </div>
+     
+    <div class="texts">
+        <h1>Services</h1><!--subhead-->
+       </div>
+    <div class="services" id="services"><!--main container of services-->
+        <div class="card-1">
+            <img src="photos/neon2.png" alt="">
+            <p>● Web Design</p>
+            <a href="https://github.com/anamariasulikashvili">See Portfolio</a>
+        </div>
+        <div class="card-2">
+            <img src="photos/neon.png" alt="">
+            <p>● Graphic Design</p>
+            <a href="https://www.behance.net/annemarsulikas1">See Portfolio</a>
+        </div>
+    </div>
+   </main>
+   <footer>
+    <div class="footer-cont" id="contact"><!--footer-->
+        <p>Contact For More:</p>
+        <div class="icons">
+            <a href="https://www.facebook.com/keira.collins.3591"><img src="photos/fb.png" alt=""></a><!--facebook icon-->
+            <a href="https://www.instagram.com/miss_annemariee/"><img src="photos/ig.png" alt=""></a><!--instagram icon-->
+            <a href=""><img src="photos/emaill.png" alt=""></a><!--email icon-->
+        </div>
+
+    </div>
+   </footer>
+   <script>
+    let hamburger = document.querySelector(".hamburger");
+    hamburger.onclick = function(){
+        navBar = document.querySelector(".nav-bar");
+        navBar.classList.toggle("active");
+    }
+</script>
+</body>
+</html>
